@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//ibatis.apache.org//DTD Config 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <!--会员模块 -->
+        <typeAlias type="com.ly.flight.goods.dal.dataobject.FlightDO" alias="flightFlight"/>
+        <typeAlias type="com.ly.flight.goods.dal.dataobject.LineDO" alias="flightLine"/>
+        <typeAlias type="com.ly.flight.goods.dal.dataobject.StockDO" alias="flightStock"/>
+        <!--end-->
+    </typeAliases>
+</configuration>

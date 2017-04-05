@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ly.flight.goods.mapper.StockMapper" >
+
+
+  <resultMap id="stock" type="StockDO">
+    <result column="stock_id" property="stockID" javaType="java.lang.String" jdbcType="VARCHAR"/>
+    <result column="flight_id" property="flightID" javaType="java.lang.String" jdbcType="VARCHAR"/>
+    <result column="line_id" property="lineID" javaType="java.lang.String" jdbcType="VARCHAR"/>
+    <result column="berth_type" property="berthType" javaType="java.lang.String" jdbcType="VARCHAR"/>
+    <result column="berth_name" property="berthName" javaType="java.lang.String" jdbcType="VARCHAR"/>
+    <result column="berth_number" property="berthNumber" javaType="java.lang.String" jdbcType="VARCHAR"/>
+    <result column="sum_berth" property="berthSum" javaType="int" jdbcType="INT"/>
+    <result column="last_berth" property="berthLast" javaType="int" jdbcType="INT"/>
+    <result column="max_sale" property="maxSale" javaType="int" jdbcType="INT"/>
+    <result column="berth_price" property="berthPrice" javaType="BigDecimal" jdbcType="DECIMAL"/>
+    <result column="discount" property="discount" javaType="BigDecimal" jdbcType="DECIMAL"/>
+    <result column="rebate" property="rebate" javaType="BigDecimal" jdbcType="DECIMAL"/>
+    <result column="meal_exist" property="mealExist" javaType="int" jdbcType="INT"/>
+  </resultMap>
+
+  <!---   插入一条航舱位的信息    -->
+  <insert id="insertStock" parameterType="stock">
+    INSERT INTO flight_stock (stock_id,flight_id,line_id,berth_type,berth_name,berth_number,sum_berth,max_sale,berth_price,discount,rebate,meal_exist)
+    VALUES (#{stockID},#{flightID},#{lineID},#{berthType},#{berthName},#{berthNumber},#{berthSum},#{berthLast},#{maxSale},#{berthPrice},#{discount},#{rebate},#{mealExist})
+  </insert>
+<!---   删除一条舱位信息 -->
+  <delete id="deleteStock" parameterType="java.lang.String">
+    DELETE FROM flight_stock WHERE stock_id=#{stockID}
+  </delete>
+
+  <!---  修改舱位信息  -->
+  <update id="updateStock" parameterType="stock">
+    UPDATE flight_stock
+    <set>
+      <if test="flight_id"> flight_id=#{flightID}, </if>
+      <if test="line_id"> line_id=#{lineID}, </if>
+      <if test="berth_type"> berth_type=#{berthType}, </if>
+      <if test="berth_name"> berth_name=#{berthName}, </if>
+      <if test="berth_number"> berth_number=#{berthNumber}, </if>
+      <if test="sum_berth"> sum_berth=#{berthSum}, </if>
+      <if test="last_berth"> last_berth=#{berthLast}, </if>
+      <if test="max_sale"> max_sale=#{maxSale}, </if>
+      <if test="berth_price"> berth_price=#{berthPrice}, </if>
+      <if test="discount"> discount=#{discount}, </if>
+      <if test="rebate"> rebate=#{rebate}, </if>
+      <if test="meal_exist"> meal_exist=#{mealExist}, </if>
+    </set>
+    WHERE stock_id=#{stockID}
+  </update>
+
+  <!--- 获取所有的舱位信息  -->
+  <select id="selectStocks" resultMap="stock">
+    SELECT * FROM flight_stock
+  </select>
+
+  <!--- 根据舱位ID获取舱位信息 -->
+  <select id="selectStock" parameterType="java.lang.String" resultMap="stock">
+    SELECT * FROM flight_stock WHERE stock_id=#{stockID}
+  </select>
+
+  <!--- 根据航程ID获取舱位信息 -->
+  <select id="selectStockByLineID" parameterType="java.lang.String" resultMap="stock">
+    SELECT * FROM flight_stock WHERE line_id=#{lineID}
+  </select>
+
+  <!--- 根据航司ID获取舱位信息 -->
+  <select id="selectStockByFlightID" parameterType="java.lang.String" resultMap="stock">
+  SELECT * FROM flight_stock WHERE flight_id=#{flightID}
+  </select>
+</mapper>

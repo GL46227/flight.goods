@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ly.flight.goods.mapper.FlightMapper" >
+  <resultMap id="flight" type="FlightDO" >
+    <result column="FLIGHT_ID" property="flightID" javaType="java.lang.String" jdbcType="VARCHAR" />
+    <result column="FLIGHT_NAME" property="flightName" javaType="java.lang.String" jdbcType="VARCHAR" />
+    <result column="PLANE_TYPE" property="planeType" javaType="java.lang.String" jdbcType="VARCHAR" />
+  </resultMap>
+
+
+  <!---    航司的插入   -->
+  <insert id="insertFlight" parameterType="flight">
+    INSERT INTO flight_flight (FLIGHT_ID,FLIGHT_NAME,PLANE_TYPE)
+    VALUES (#{flightID},#{flightName},#{planeType})
+  </insert>
+
+  <!---   根据航司ID删除航司信息 -->
+  <delete id="deleteFlight" parameterType="java.lang.String">
+    DELETE FROM flight_flight WHERE FLIGHT_ID=#{flightID}
+  </delete>
+
+
+  <!--- 根据航司ID更新航司信息 -->
+  <update id="updateFlight" parameterType="flight">
+    UPDATE flight_flight
+    <set>
+      <if test="FLIGHT_NAME"> FLIGHT_NAME=#{flightName}, </if>
+      <if test="PLANE_TYPE"> PLANE_TYPE=#{planeType}, </if>
+    </set>
+    WHERE FLIGHT_ID=#{flightID}
+  </update>
+
+  <!---    所有的航司   -->
+  <select id="selectAllFlights" resultType="flight">
+    SELECT * FROM flight_flight
+  </select>
+
+  <!---   根据航司ID查询航司信息  -->
+  <select id="selectFlight" resultType="flight" parameterType="java.lang.String">
+    SELECT * FROM flight_flight WHERE FLIGHT_ID=#{flightID}
+  </select>
+
+</mapper>
