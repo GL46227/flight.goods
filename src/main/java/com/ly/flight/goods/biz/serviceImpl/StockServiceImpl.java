@@ -6,7 +6,7 @@ package com.ly.flight.goods.biz.serviceImpl;
 
 import com.ly.flight.core.goods.GoodsException;
 import com.ly.flight.goods.biz.VO.StockVO;
-import com.ly.flight.goods.biz.mapper.GoodsMapper;
+import com.ly.flight.goods.biz.mapper.BaseMapper;
 import com.ly.flight.goods.biz.service.StockService;
 import com.ly.flight.goods.dal.dalinterface.StockMapper;
 import com.ly.flight.goods.dal.dataobject.StockDO;
@@ -25,7 +25,7 @@ public class StockServiceImpl implements StockService {
     private StockMapper stockMapper;
 
     public Integer addStock(StockVO stockVO) throws GoodsException {
-        return stockMapper.insertStock(GoodsMapper.stockVO2stockDO(stockVO));
+        return stockMapper.insertStock(BaseMapper.stockVO2stockDO(stockVO));
     }
 
     public Integer removeStock(String stockID) throws GoodsException {
@@ -33,7 +33,7 @@ public class StockServiceImpl implements StockService {
     }
 
     public Integer updateStock(StockVO stockVO) throws GoodsException {
-        return stockMapper.updateStock(GoodsMapper.stockVO2stockDO(stockVO));
+        return stockMapper.updateStock(BaseMapper.stockVO2stockDO(stockVO));
     }
 
     public List<StockVO> getAllStocks() throws GoodsException {
@@ -41,14 +41,14 @@ public class StockServiceImpl implements StockService {
         List<StockDO> list=stockMapper.selectStocks();
         for (StockDO stockDO:list
              ) {
-            StockVO stockVO=GoodsMapper.stockDO2stockVO(stockDO);
+            StockVO stockVO= BaseMapper.stockDO2stockVO(stockDO);
             listVO.add(stockVO);
         }
          return listVO;
     }
 
     public StockVO getStock(String stockID) throws GoodsException {
-        return GoodsMapper.stockDO2stockVO(stockMapper.selectStock(stockID));
+        return BaseMapper.stockDO2stockVO(stockMapper.selectStock(stockID));
     }
 
     public List<StockVO> getStockByLineID(String lineID) throws GoodsException {
@@ -56,7 +56,7 @@ public class StockServiceImpl implements StockService {
         List<StockVO> listVO=new ArrayList<StockVO>();
         for (StockDO stockDO:list
              ) {
-            StockVO stockVO=GoodsMapper.stockDO2stockVO(stockDO);
+            StockVO stockVO= BaseMapper.stockDO2stockVO(stockDO);
             listVO.add(stockVO);
         }
         return listVO;
@@ -67,7 +67,7 @@ public class StockServiceImpl implements StockService {
         List<StockVO> listVO=new ArrayList<StockVO>();
         for (StockDO stockDO:list
              ) {
-            StockVO stockVO=GoodsMapper.stockDO2stockVO(stockDO);
+            StockVO stockVO= BaseMapper.stockDO2stockVO(stockDO);
             listVO.add(stockVO);
         }
         return listVO;

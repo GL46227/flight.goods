@@ -19,7 +19,7 @@ public interface FlightService {
      * @param flightVO
      * @return
      */
-    Integer addFliht(FlightVO flightVO) throws GoodsException;
+    Integer addFlight(FlightVO flightVO) throws GoodsException;
 
     /**
      * 删除一条航司信息

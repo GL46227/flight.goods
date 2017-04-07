@@ -4,9 +4,6 @@
  */
 package com.ly.flight.goods.biz.VO;
 
-import com.ly.flight.goods.dal.dataobject.FlightDO;
-import com.ly.flight.goods.dal.dataobject.StockDO;
-
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
@@ -74,7 +71,7 @@ public class LineShowVO {
     /**
      * 航司
      */
-    private List<FlightDO> flightDOList;
+    private List<FlightVO> flightVOList;
 
 
     /**
@@ -89,7 +86,7 @@ public class LineShowVO {
     /**
      * 舱位表
      */
-    private List<StockDO> stockDOList;
+    private List<StockVO> stockVOList;
 
     public String getLineID() {
         return lineID;
@@ -179,12 +176,12 @@ public class LineShowVO {
         this.middleTime = middleTime;
     }
 
-    public List<FlightDO> getFlightDOList() {
-        return flightDOList;
+    public List<FlightVO> getFlightVOList() {
+        return flightVOList;
     }
 
-    public void setFlightDOList(List<FlightDO> flightDOList) {
-        this.flightDOList = flightDOList;
+    public void setFlightVOList(List<FlightVO> flightVOList) {
+        this.flightVOList = flightVOList;
     }
 
     public String getGate() {
@@ -203,11 +200,11 @@ public class LineShowVO {
         this.taxMoney = taxMoney;
     }
 
-    public List<StockDO> getStockDOList() {
-        return stockDOList;
+    public List<StockVO> getStockVOList() {
+        return stockVOList;
     }
 
-    public void setStockDOList(List<StockDO> stockDOList) {
-        this.stockDOList = stockDOList;
+    public void setStockVOList(List<StockVO> stockVOList) {
+        this.stockVOList = stockVOList;
     }
 }

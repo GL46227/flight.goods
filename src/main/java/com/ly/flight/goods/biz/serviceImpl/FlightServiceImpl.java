@@ -6,7 +6,7 @@ package com.ly.flight.goods.biz.serviceImpl;
 
 import com.ly.flight.core.goods.GoodsException;
 import com.ly.flight.goods.biz.VO.FlightVO;
-import com.ly.flight.goods.biz.mapper.GoodsMapper;
+import com.ly.flight.goods.biz.mapper.BaseMapper;
 import com.ly.flight.goods.biz.service.FlightService;
 import com.ly.flight.goods.dal.dalinterface.FlightMapper;
 import com.ly.flight.goods.dal.dataobject.FlightDO;
@@ -26,8 +26,8 @@ public class FlightServiceImpl implements FlightService{
     @Resource
     private FlightMapper flightMapper;
 
-    public Integer addFliht(FlightVO flightVO) throws GoodsException {
-        FlightDO flightDO=GoodsMapper.flightVO2flightDO(flightVO);
+    public Integer addFlight(FlightVO flightVO) throws GoodsException {
+        FlightDO flightDO= BaseMapper.flightVO2flightDO(flightVO);
         return flightMapper.insertFlight(flightDO);
     }
 
@@ -36,7 +36,7 @@ public class FlightServiceImpl implements FlightService{
     }
 
     public Integer updateFlight(FlightVO flightVO) throws GoodsException {
-        FlightDO flightDO=GoodsMapper.flightVO2flightDO(flightVO);
+        FlightDO flightDO= BaseMapper.flightVO2flightDO(flightVO);
         return flightMapper.updateFlight(flightDO);
     }
 
@@ -45,7 +45,7 @@ public class FlightServiceImpl implements FlightService{
         List<FlightVO> listVO=new ArrayList<FlightVO>();
         for (FlightDO flightDO:list
              ) {
-            FlightVO flightVO=GoodsMapper.flightDO2flightVO(flightDO);
+            FlightVO flightVO=BaseMapper.flightDO2flightVO(flightDO);
             listVO.add(flightVO);
         }
         return listVO;
@@ -53,6 +53,6 @@ public class FlightServiceImpl implements FlightService{
     }
 
     public FlightVO getFlight(String flightID) throws GoodsException {
-        return GoodsMapper.flightDO2flightVO(flightMapper.selectFlight(flightID));
+        return BaseMapper.flightDO2flightVO(flightMapper.selectFlight(flightID));
     }
 }
