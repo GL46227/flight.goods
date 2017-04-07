@@ -184,11 +184,11 @@ public class GoodsMapper {
         lineShowDTO.setTaxMoney(lineShowVO.getTaxMoney());
         lineShowDTO.setStartAirport(lineShowVO.getStartAirport());
         lineShowDTO.setStartTime(lineShowVO.getStartTime());
-        List<StockVO> listStockVO=lineShowVO.getStockVOList();
-        List<StockDTO> listStockDTO=new ArrayList<StockDTO>();
-        for (StockVO stockVO:listStockVO
-             ) {
-            StockDTO stockDTO= BaseMapper.stockVO2DTO(stockVO);
+        List<StockVO> listStockVO = lineShowVO.getStockVOList();
+        List<StockDTO> listStockDTO = new ArrayList<StockDTO>();
+        for (StockVO stockVO : listStockVO
+                ) {
+            StockDTO stockDTO = BaseMapper.stockVO2DTO(stockVO);
             listStockDTO.add(stockDTO);
         }
         lineShowDTO.setStockDTOList(listStockDTO);
@@ -230,11 +230,11 @@ public class GoodsMapper {
         lineShowVO.setStartCity(lineShowDO.getStartCity());
         lineShowVO.setFinishCity(lineShowDO.getFinishCity());
         lineShowVO.setFinishAirport(lineShowDO.getFinishAirport());
-        List<FlightVO> flightVOList=new ArrayList<FlightVO>();
-        List<FlightDO> flightDOList=lineShowDO.getFlightDOList();
-        for (FlightDO flightDO:flightDOList
-             ) {
-            FlightVO flightVO= BaseMapper.flightDO2flightVO(flightDO);
+        List<FlightVO> flightVOList = new ArrayList<FlightVO>();
+        List<FlightDO> flightDOList = lineShowDO.getFlightDOList();
+        for (FlightDO flightDO : flightDOList
+                ) {
+            FlightVO flightVO = BaseMapper.flightDO2flightVO(flightDO);
             flightVOList.add(flightVO);
         }
         lineShowVO.setFlightVOList(flightVOList);
@@ -246,11 +246,11 @@ public class GoodsMapper {
         lineShowVO.setTaxMoney(lineShowDO.getTaxMoney());
         lineShowVO.setStartAirport(lineShowDO.getStartAirport());
         lineShowVO.setStartTime(lineShowDO.getStartTime());
-        List<StockDO> listStockDO=lineShowDO.getStockDOList();
-        List<StockVO> listStockVO=new ArrayList<StockVO>();
-        for (StockDO stockDO:listStockDO
-             ) {
-            StockVO stockVO= BaseMapper.stockDO2stockVO(stockDO);
+        List<StockDO> listStockDO = lineShowDO.getStockDOList();
+        List<StockVO> listStockVO = new ArrayList<StockVO>();
+        for (StockDO stockDO : listStockDO
+                ) {
+            StockVO stockVO = BaseMapper.stockDO2stockVO(stockDO);
             listStockVO.add(stockVO);
         }
         lineShowVO.setStockVOList(listStockVO);
@@ -274,11 +274,11 @@ public class GoodsMapper {
         lineShowDO.setStartCity(lineShowVO.getStartCity());
         lineShowDO.setFinishCity(lineShowVO.getFinishCity());
         lineShowDO.setFinishAirport(lineShowVO.getFinishAirport());
-        List<FlightDO> flightDOList=new ArrayList<FlightDO>();
-        List<FlightVO> flightVOList=lineShowVO.getFlightVOList();
-        for (FlightVO flightVO:flightVOList
+        List<FlightDO> flightDOList = new ArrayList<FlightDO>();
+        List<FlightVO> flightVOList = lineShowVO.getFlightVOList();
+        for (FlightVO flightVO : flightVOList
                 ) {
-            FlightDO flightDO= BaseMapper.flightVO2flightDO(flightVO);
+            FlightDO flightDO = BaseMapper.flightVO2flightDO(flightVO);
             flightDOList.add(flightDO);
         }
         lineShowDO.setFlightDOList(flightDOList);
@@ -290,20 +290,16 @@ public class GoodsMapper {
         lineShowDO.setTaxMoney(lineShowVO.getTaxMoney());
         lineShowDO.setStartAirport(lineShowVO.getStartAirport());
         lineShowDO.setStartTime(lineShowVO.getStartTime());
-        List<StockVO> listStockVO=lineShowVO.getStockVOList();
-        List<StockDO> listStockDO=new ArrayList<StockDO>();
-        for (StockVO stockVO:listStockVO
-             ) {
-            StockDO stockDO= BaseMapper.stockVO2stockDO(stockVO);
+        List<StockVO> listStockVO = lineShowVO.getStockVOList();
+        List<StockDO> listStockDO = new ArrayList<StockDO>();
+        for (StockVO stockVO : listStockVO
+                ) {
+            StockDO stockDO = BaseMapper.stockVO2stockDO(stockVO);
             listStockDO.add(stockDO);
         }
         lineShowDO.setStockDOList(listStockDO);
         return lineShowDO;
     }
-
-
-
-
 
 
 }

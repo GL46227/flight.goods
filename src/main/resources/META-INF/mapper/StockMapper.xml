@@ -13,6 +13,7 @@
     <result column="sum_berth" property="berthSum" javaType="int" jdbcType="INT"/>
     <result column="last_berth" property="berthLast" javaType="int" jdbcType="INT"/>
     <result column="max_sale" property="maxSale" javaType="int" jdbcType="INT"/>
+    <result column="is_sale" property="isSale" javaType="int" jdbcType="INT"/>
     <result column="berth_price" property="berthPrice" javaType="BigDecimal" jdbcType="DECIMAL"/>
     <result column="discount" property="discount" javaType="BigDecimal" jdbcType="DECIMAL"/>
     <result column="rebate" property="rebate" javaType="BigDecimal" jdbcType="DECIMAL"/>
@@ -21,8 +22,8 @@
 
   <!---   插入一条航舱位的信息    -->
   <insert id="insertStock" parameterType="stock">
-    INSERT INTO flight_stock (stock_id,flight_id,line_id,berth_type,berth_name,berth_number,sum_berth,max_sale,berth_price,discount,rebate,meal_exist)
-    VALUES (#{stockID},#{flightID},#{lineID},#{berthType},#{berthName},#{berthNumber},#{berthSum},#{berthLast},#{maxSale},#{berthPrice},#{discount},#{rebate},#{mealExist})
+    INSERT INTO flight_stock (stock_id,flight_id,line_id,berth_type,berth_name,berth_number,sum_berth,max_sale,is_sale,berth_price,discount,rebate,meal_exist)
+    VALUES (#{stockID},#{flightID},#{lineID},#{berthType},#{berthName},#{berthNumber},#{berthSum},#{berthLast},#{maxSale},#{isSale},#{berthPrice},#{discount},#{rebate},#{mealExist})
   </insert>
 <!---   删除一条舱位信息 -->
   <delete id="deleteStock" parameterType="java.lang.String">
@@ -41,6 +42,7 @@
       <if test="sum_berth"> sum_berth=#{berthSum}, </if>
       <if test="last_berth"> last_berth=#{berthLast}, </if>
       <if test="max_sale"> max_sale=#{maxSale}, </if>
+      <if test="is_sale"> is_sale=#{isSale}, </if>
       <if test="berth_price"> berth_price=#{berthPrice}, </if>
       <if test="discount"> discount=#{discount}, </if>
       <if test="rebate"> rebate=#{rebate}, </if>

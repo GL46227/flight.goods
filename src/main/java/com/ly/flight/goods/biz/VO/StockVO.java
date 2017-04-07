@@ -48,6 +48,10 @@ public class StockVO {
      */
     private int maxSale;
     /**
+     * 已下单量
+     */
+    private int isSale;
+    /**
      * 机票价格
      */
     private BigDecimal berthPrice;
@@ -166,5 +170,13 @@ public class StockVO {
 
     public void setMealExist(int mealExist) {
         this.mealExist = mealExist;
+    }
+
+    public int getIsSale() {
+        return isSale;
+    }
+
+    public void setIsSale(int isSale) {
+        this.isSale = isSale;
     }
 }

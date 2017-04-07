@@ -116,6 +116,7 @@ public class BaseMapper {
         stockVO.setMealExist(stockDO.getMealExist());
         stockVO.setRebate(stockDO.getRebate());
         stockVO.setStockID(stockDO.getStockID());
+        stockVO.setIsSale(stockDO.getIsSale());
         return stockVO;
     }
 
@@ -144,6 +145,7 @@ public class BaseMapper {
         stockDO.setMealExist(stockVO.getMealExist());
         stockDO.setRebate(stockVO.getRebate());
         stockDO.setStockID(stockVO.getStockID());
+        stockDO.setIsSale(stockVO.getIsSale());
         return stockDO;
     }
 
@@ -171,6 +173,7 @@ public class BaseMapper {
         stockDTO.setLineID(stockVO.getLineID());
         stockDTO.setMaxSale(stockVO.getMaxSale());
         stockDTO.setMealExist(stockVO.getMealExist());
+        stockDTO.setIsSale(stockVO.getIsSale());
         return stockDTO;
     }
 
@@ -197,6 +200,7 @@ public class BaseMapper {
         stockVO.setLineID(stockDTO.getLineID());
         stockVO.setMaxSale(stockDTO.getMaxSale());
         stockVO.setMealExist(stockDTO.getMealExist());
+        stockVO.setIsSale(stockDTO.getIsSale());
         return stockVO;
     }
 

@@ -16,6 +16,7 @@ import com.ly.flight.goods.dal.dataobject.LineShowDO;
 import com.ly.flight.goods.dal.dataobject.UserLineDO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
@@ -25,6 +26,7 @@ import java.util.List;
  * @author gl46227
  * @version $Id: LineServiceImpl.java, v0.1 2017/4/5 gl46227 Exp $$
  */
+@Service("lineService")
 public class LineServiceImpl implements LineService {
     private static final Logger logger = LoggerFactory.getLogger(FlightServiceImpl.class);
     @Resource

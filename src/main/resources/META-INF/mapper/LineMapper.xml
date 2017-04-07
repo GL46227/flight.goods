@@ -32,6 +32,7 @@
       <id column="sum_berth" property="berthSum" javaType="int" jdbcType="INT"/>
       <id column="last_berth" property="berthLast" javaType="int" jdbcType="INT"/>
       <id column="max_sale" property="maxSale" javaType="int" jdbcType="INT"/>
+      <id column="is_sale" property="isSale" javaType="int" jdbcType="INT"/>
       <id column="berth_price" property="berthPrice" javaType="BigDecimal" jdbcType="DECIMAL"/>
       <id column="discount" property="discount" javaType="BigDecimal" jdbcType="DECIMAL"/>
       <id column="rebate" property="rebate" javaType="BigDecimal" jdbcType="DECIMAL"/>

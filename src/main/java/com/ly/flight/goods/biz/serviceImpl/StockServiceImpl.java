@@ -10,6 +10,7 @@ import com.ly.flight.goods.biz.mapper.BaseMapper;
 import com.ly.flight.goods.biz.service.StockService;
 import com.ly.flight.goods.dal.daointerface.StockMapper;
 import com.ly.flight.goods.dal.dataobject.StockDO;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
@@ -19,6 +20,7 @@ import java.util.List;
  * @author gl46227
  * @version $Id: StockServiceImpl.java, v0.1 2017/4/5 gl46227 Exp $$
  */
+@Service("stockService")
 public class StockServiceImpl implements StockService {
 
     @Resource

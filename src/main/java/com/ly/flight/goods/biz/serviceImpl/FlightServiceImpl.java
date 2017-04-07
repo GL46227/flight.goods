@@ -12,6 +12,7 @@ import com.ly.flight.goods.dal.daointerface.FlightMapper;
 import com.ly.flight.goods.dal.dataobject.FlightDO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
@@ -21,6 +22,7 @@ import java.util.List;
  * @author gl46227
  * @version $Id: FlightServiceImpl.java, v0.1 2017/4/5 gl46227 Exp $$
  */
+@Service("flightService")
 public class FlightServiceImpl implements FlightService{
     private static final Logger logger = LoggerFactory.getLogger(FlightServiceImpl.class);
     @Resource
