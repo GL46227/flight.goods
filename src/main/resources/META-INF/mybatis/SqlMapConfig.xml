@@ -4,11 +4,11 @@
 <configuration>
     <typeAliases>
         <!--商品模块 -->
-        <typeAlias type="com.ly.flight.goods.dal.dataobject.FlightDO" alias="flightFlight"/>
-        <typeAlias type="com.ly.flight.goods.dal.dataobject.LineDO" alias="flightLine"/>
-        <typeAlias type="com.ly.flight.goods.dal.dataobject.StockDO" alias="flightStock"/>
-        <typeAlias type="com.ly.flight.goods.dal.dataobject.UserLineDO" alias="userLineDO"/>
-        <typeAlias type="com.ly.flight.goods.dal.dataobject.LineShowDO" alias="lineShowDO"/>
+        <typeAlias type="com.ly.flight.goods.dal.dataobject.FlightDO" alias="FlightDO"/>
+        <typeAlias type="com.ly.flight.goods.dal.dataobject.LineDO" alias="LineDO"/>
+        <typeAlias type="com.ly.flight.goods.dal.dataobject.StockDO" alias="StockDO"/>
+        <typeAlias type="com.ly.flight.goods.dal.dataobject.UserLineDO" alias="UserLineDO"/>
+        <typeAlias type="com.ly.flight.goods.dal.dataobject.LineShowDO" alias="LineShowDO"/>
         <!--end-->
     </typeAliases>
 </configuration>

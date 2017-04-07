@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e749f507-5c6f-4255-ae5d-798c9b521a5d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/serviceImpl/FlightServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/serviceImpl/FlightServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/serviceImpl/LineServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/serviceImpl/LineServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/serviceImpl/StockServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/serviceImpl/StockServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/mapper/LineMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mapper/LineMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/SqlMapConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/SqlMapConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/spring/applicationContext.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/dal/dalinterface/FlightMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/dal/daointerface/FlightMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/dal/dalinterface/LineMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/dal/daointerface/LineMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/dal/dalinterface/StockMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/dal/daointerface/StockMapper.java" />
     </list>
     <ignored path="flightgoods.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,8 +52,8 @@
       <file leaf-file-name="LineMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/mapper/LineMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2478">
-              <caret line="118" column="95" selection-start-line="118" selection-start-column="95" selection-end-line="118" selection-end-column="95" />
+            <state relative-caret-position="441">
+              <caret line="111" column="58" selection-start-line="111" selection-start-column="48" selection-end-line="111" selection-end-column="58" />
               <folding>
                 <marker date="1491548753581" expanded="true" signature="4880:5259" placeholder="INSERT INTO flight_line... " />
                 <marker date="1491548753581" expanded="true" signature="5367:5414" placeholder="DELETE FROM " />
@@ -85,7 +77,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SqlMapConfig.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SqlMapConfig.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/mybatis/SqlMapConfig.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
@@ -95,10 +87,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
+            <state relative-caret-position="284">
               <caret line="51" column="80" selection-start-line="51" selection-start-column="80" selection-end-line="51" selection-end-column="80" />
               <folding />
             </state>
@@ -118,8 +110,8 @@
       <file leaf-file-name="StockMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/mapper/StockMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-184">
-              <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+            <state relative-caret-position="-668">
+              <caret line="5" column="37" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="37" />
               <folding>
                 <marker date="1491360515825" expanded="true" signature="1568:1886" placeholder="INSERT INTO flight_stock... " />
                 <marker date="1491360515825" expanded="true" signature="1985:2035" placeholder="DELETE FROM " />
@@ -136,8 +128,8 @@
       <file leaf-file-name="FlightMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/mapper/FlightMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="826">
-              <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+            <state relative-caret-position="63">
+              <caret line="3" column="39" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="39" />
               <folding>
                 <marker date="1491029700391" expanded="true" signature="659:771" placeholder="INSERT INTO flight_flight... " />
                 <marker date="1491029700391" expanded="true" signature="878:931" placeholder="DELETE FROM " />
@@ -293,6 +285,68 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="flightgoods" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flightgoods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.mybatis:mybatis-spring:1.1.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybatis-spring-1.1.1.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flightgoods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.mybatis:mybatis:3.2.8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybatis-3.2.8.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flightgoods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.mybatis:mybatis:3.2.8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybatis-3.2.8.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1380,7 +1434,7 @@
       <workItem from="1491218824367" duration="1003000" />
       <workItem from="1491355541964" duration="27691000" />
       <workItem from="1491442342809" duration="22396000" />
-      <workItem from="1491528030550" duration="14588000" />
+      <workItem from="1491528030550" duration="15027000" />
     </task>
     <task id="LOCAL-00001" summary="goods">
       <created>1491545564680</created>
@@ -1389,11 +1443,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491545564680</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="goods">
+      <created>1491548978449</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1491548978449</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87581000" />
+    <option name="totallyTimeSpent" value="88020000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1760,20 +1821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/mapper/FlightMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="826">
-          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-          <folding>
-            <marker date="1491029700391" expanded="true" signature="659:771" placeholder="INSERT INTO flight_flight... " />
-            <marker date="1491029700391" expanded="true" signature="878:931" placeholder="DELETE FROM " />
-            <marker date="1491029700391" expanded="true" signature="1027:1223" placeholder="UPDATE fligh... " />
-            <marker date="1491029700391" expanded="true" signature="1317:1344" placeholder="SELECT * FRO... flight_flight" />
-            <marker date="1491029700391" expanded="true" signature="1472:1527" placeholder="SELECT * FRO... flight_flight" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/VO/LineVO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
@@ -1790,14 +1837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="51" column="80" selection-start-line="51" selection-start-column="80" selection-end-line="51" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/GoodsServiceProvider.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -1806,10 +1845,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/mapper/FlightMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="39" />
+          <folding>
+            <marker date="1491029700391" expanded="true" signature="659:771" placeholder="INSERT INTO flight_flight... " />
+            <marker date="1491029700391" expanded="true" signature="878:931" placeholder="DELETE FROM " />
+            <marker date="1491029700391" expanded="true" signature="1027:1223" placeholder="UPDATE fligh... " />
+            <marker date="1491029700391" expanded="true" signature="1317:1344" placeholder="SELECT * FRO... flight_flight" />
+            <marker date="1491029700391" expanded="true" signature="1472:1527" placeholder="SELECT * FRO... flight_flight" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/mapper/StockMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-184">
-          <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+        <state relative-caret-position="-668">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="37" />
           <folding>
             <marker date="1491360515825" expanded="true" signature="1568:1886" placeholder="INSERT INTO flight_stock... " />
             <marker date="1491360515825" expanded="true" signature="1985:2035" placeholder="DELETE FROM " />
@@ -1824,8 +1877,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/mapper/LineMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2478">
-          <caret line="118" column="95" selection-start-line="118" selection-start-column="95" selection-end-line="118" selection-end-column="95" />
+        <state relative-caret-position="441">
+          <caret line="111" column="58" selection-start-line="111" selection-start-column="48" selection-end-line="111" selection-end-column="58" />
           <folding>
             <marker date="1491548753581" expanded="true" signature="4880:5259" placeholder="INSERT INTO flight_line... " />
             <marker date="1491548753581" expanded="true" signature="5367:5414" placeholder="DELETE FROM " />
@@ -1842,6 +1895,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="51" column="80" selection-start-line="51" selection-start-column="80" selection-end-line="51" selection-end-column="80" />
           <folding />
         </state>
       </provider>
