@@ -22,6 +22,21 @@
       <id column="FLIGHT_NAME" property="flightName" javaType="java.lang.String" jdbcType="VARCHAR"/>
       <id column="PLANE_TYPE" property="planeType" javaType="java.lang.String" jdbcType="VARCHAR"/>
     </collection>
+    <collection property="StockDO" ofType="StockDO">
+      <id column="stock_id" property="stockID" javaType="java.lang.String" jdbcType="VARCHAR"/>
+      <id column="flight_id" property="flightID" javaType="java.lang.String" jdbcType="VARCHAR"/>
+      <id column="line_id" property="lineID" javaType="java.lang.String" jdbcType="VARCHAR"/>
+      <id column="berth_type" property="berthType" javaType="java.lang.String" jdbcType="VARCHAR"/>
+      <id column="berth_name" property="berthName" javaType="java.lang.String" jdbcType="VARCHAR"/>
+      <id column="berth_number" property="berthNumber" javaType="java.lang.String" jdbcType="VARCHAR"/>
+      <id column="sum_berth" property="berthSum" javaType="int" jdbcType="INT"/>
+      <id column="last_berth" property="berthLast" javaType="int" jdbcType="INT"/>
+      <id column="max_sale" property="maxSale" javaType="int" jdbcType="INT"/>
+      <id column="berth_price" property="berthPrice" javaType="BigDecimal" jdbcType="DECIMAL"/>
+      <id column="discount" property="discount" javaType="BigDecimal" jdbcType="DECIMAL"/>
+      <id column="rebate" property="rebate" javaType="BigDecimal" jdbcType="DECIMAL"/>
+      <id column="meal_exist" property="mealExist" javaType="int" jdbcType="INT"/>
+    </collection>
   </resultMap>
 
 <resultMap id="line" type="LineDO" >
@@ -98,8 +113,10 @@
     SELECT LINE_ID,START_CITY,FINISH_CITY,GMT_STARTTIME,GMT_FINISHTIME,START_AIRPORT,
     FINISH_AIRPORT,MIDDLE_AIRPORT,FLY_TYPE,AIR_PORT,TOURISTCLASS_MONEY,FIRSTCLASS_MONEY,
     MEAL_EXIST,TAX_MONEY,TREBATE_MONEY,FREBATE_MONEY,flight_flight.FLIGHT_ID,flight_flight.FLIGHT_NAME,
-    flight_flight.PLANE_TYPE,flight_flight.SUM_FIRSTCLASS,flight_flight.SUM_TOURISTCLASS FROM flightsellssystemline JOIN flightsellssystemflight ON
-    flight_line.FLIGHT_ID=flight_flight.FLIGHT_ID WHERE START_CITY=#{startCity} AND
+    flight_flight.PLANE_TYPE,flight_flight.SUM_FIRSTCLASS,flight_flight.SUM_TOURISTCLASS,flight_stock.berth_type,
+     flight_stock.berth_name,flight_stock.berth_number,flight_stock.last_berth,flight_stock.berth_price,flight_stock.discount,
+     flight_stock.rebate,flight_stock.meal_exist FROM flightsellssystemline LEFT JOIN flightsellssystemflight ON
+    flight_line.FLIGHT_ID=flight_flight.FLIGHT_ID LEFT JOIN flight_stock ON flight_line.LINE_ID=flight_stock.line_id WHERE START_CITY=#{startCity} AND
     FINISH_CITY=#{finishCity} AND GMT_STARTTIME=#{startTime};
   </select>
 

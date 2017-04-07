@@ -8,7 +8,7 @@ import com.ly.flight.core.goods.GoodsException;
 import com.ly.flight.goods.biz.VO.StockVO;
 import com.ly.flight.goods.biz.mapper.BaseMapper;
 import com.ly.flight.goods.biz.service.StockService;
-import com.ly.flight.goods.dal.dalinterface.StockMapper;
+import com.ly.flight.goods.dal.daointerface.StockMapper;
 import com.ly.flight.goods.dal.dataobject.StockDO;
 
 import javax.annotation.Resource;

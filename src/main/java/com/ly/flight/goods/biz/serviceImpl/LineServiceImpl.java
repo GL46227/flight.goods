@@ -10,7 +10,7 @@ import com.ly.flight.goods.biz.VO.LineShowVO;
 import com.ly.flight.goods.biz.VO.LineVO;
 import com.ly.flight.goods.biz.mapper.GoodsMapper;
 import com.ly.flight.goods.biz.service.LineService;
-import com.ly.flight.goods.dal.dalinterface.LineMapper;
+import com.ly.flight.goods.dal.daointerface.LineMapper;
 import com.ly.flight.goods.dal.dataobject.LineDO;
 import com.ly.flight.goods.dal.dataobject.LineShowDO;
 import com.ly.flight.goods.dal.dataobject.UserLineDO;

@@ -8,7 +8,7 @@ import com.ly.flight.core.goods.GoodsException;
 import com.ly.flight.goods.biz.VO.FlightVO;
 import com.ly.flight.goods.biz.mapper.BaseMapper;
 import com.ly.flight.goods.biz.service.FlightService;
-import com.ly.flight.goods.dal.dalinterface.FlightMapper;
+import com.ly.flight.goods.dal.daointerface.FlightMapper;
 import com.ly.flight.goods.dal.dataobject.FlightDO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

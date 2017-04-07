@@ -2,7 +2,7 @@
  * LY.com Inc.
  * Copyright (c) 2004-2017 All Rights Reserved.
  */
-package com.ly.flight.goods.dal.dalinterface;
+package com.ly.flight.goods.dal.daointerface;
 
 import com.ly.flight.goods.dal.dataobject.StockDO;
 
