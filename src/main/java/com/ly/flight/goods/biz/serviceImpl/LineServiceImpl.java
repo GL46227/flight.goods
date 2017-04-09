@@ -16,7 +16,9 @@ import com.ly.flight.goods.dal.dataobject.LineShowDO;
 import com.ly.flight.goods.dal.dataobject.UserLineDO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
@@ -29,7 +31,7 @@ import java.util.List;
 @Service("lineService")
 public class LineServiceImpl implements LineService {
     private static final Logger logger = LoggerFactory.getLogger(FlightServiceImpl.class);
-    @Resource
+    @Autowired
     private LineMapper lineMapper;
 
     public Integer addLine(LineVO lineVO) throws GoodsException {
@@ -40,6 +42,8 @@ public class LineServiceImpl implements LineService {
         return lineMapper.deleteLine(lineID);
     }
 
+
+    @Transactional
     public Integer updateLine(LineVO lineVO) throws GoodsException {
         return lineMapper.updateLine(GoodsMapper.lineVO2lineDO(lineVO));
     }
