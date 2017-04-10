@@ -121,7 +121,7 @@ public class LineFacadeImpl implements LineFacade{
     public SingleResult<List<LineShowDTO>> getLineByUserDTO(UserLineDTO userLineDTO) {
         Assert.notNull(userLineDTO,"UserLineDTO cant be null");
         try {
-           List<LineShowVO> listVO= lineService.getLineByUserDTO(userLineDTO);
+           List<LineShowVO> listVO= lineService.getLinesByUser(userLineDTO);
             List<LineShowDTO> listDTO=new ArrayList<LineShowDTO>();
             for (LineShowVO lineShowVO:listVO
                  ) {

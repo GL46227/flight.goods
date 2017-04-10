@@ -52,19 +52,27 @@ public interface LineService {
     LineVO getLineByLineID(String lineID) throws GoodsException;
 
     /**
-     * 根据航程ID获取航程信息
+     * 根据航司ID获取航程信息
      * @param flightID
      * @return
      * @throws GoodsException
      */
     List<LineVO> getLineByFlightID(String flightID) throws GoodsException;
 
+//    /**
+//     * 根据用户DTO查询
+//     * @param userLineDTO
+//     * @return
+//     * @throws GoodsException
+//     */
+//    List<LineShowVO> getLineByUserDTO(UserLineDTO userLineDTO) throws GoodsException;
+
     /**
-     * 根据用户DTO查询
+     * 用户查询
      * @param userLineDTO
      * @return
      * @throws GoodsException
      */
-    List<LineShowVO> getLineByUserDTO(UserLineDTO userLineDTO) throws GoodsException;
+    List<LineShowVO> getLinesByUser(UserLineDTO userLineDTO) throws GoodsException;
 
 }

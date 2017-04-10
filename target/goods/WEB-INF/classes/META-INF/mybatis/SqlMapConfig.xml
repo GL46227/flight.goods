@@ -3,10 +3,12 @@
         "http://ibatis.apache.org/dtd/ibatis-3-config.dtd">
 <configuration>
     <typeAliases>
-        <!--会员模块 -->
-        <typeAlias type="com.ly.flight.goods.dal.dataobject.FlightDO" alias="flightFlight"/>
-        <typeAlias type="com.ly.flight.goods.dal.dataobject.LineDO" alias="flightLine"/>
-        <typeAlias type="com.ly.flight.goods.dal.dataobject.StockDO" alias="flightStock"/>
+        <!--商品模块 -->
+        <typeAlias type="com.ly.flight.goods.dal.dataobject.FlightDO" alias="FlightDO"/>
+        <typeAlias type="com.ly.flight.goods.dal.dataobject.LineDO" alias="LineDO"/>
+        <typeAlias type="com.ly.flight.goods.dal.dataobject.StockDO" alias="StockDO"/>
+        <typeAlias type="com.ly.flight.goods.dal.dataobject.UserLineDO" alias="UserLineDO"/>
+        <typeAlias type="com.ly.flight.goods.dal.dataobject.LineShowDO" alias="LineShowDO"/>
         <!--end-->
     </typeAliases>
 </configuration>

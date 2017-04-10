@@ -4,13 +4,18 @@
  */
 package com.ly.flight.goods.biz.mapper;
 
-import com.ly.flight.core.goods.DTO.*;
+import com.ly.flight.core.goods.DTO.LineDTO;
+import com.ly.flight.core.goods.DTO.LineShowDTO;
+import com.ly.flight.core.goods.DTO.StockDTO;
+import com.ly.flight.core.goods.DTO.UserLineDTO;
 import com.ly.flight.core.goods.GoodsException;
-import com.ly.flight.goods.biz.VO.FlightVO;
 import com.ly.flight.goods.biz.VO.LineShowVO;
 import com.ly.flight.goods.biz.VO.LineVO;
 import com.ly.flight.goods.biz.VO.StockVO;
-import com.ly.flight.goods.dal.dataobject.*;
+import com.ly.flight.goods.dal.dataobject.LineDO;
+import com.ly.flight.goods.dal.dataobject.LineShowDO;
+import com.ly.flight.goods.dal.dataobject.StockDO;
+import com.ly.flight.goods.dal.dataobject.UserLineDO;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -168,14 +173,14 @@ public class GoodsMapper {
         lineShowDTO.setStartCity(lineShowVO.getStartCity());
         lineShowDTO.setFinishCity(lineShowVO.getFinishCity());
         lineShowDTO.setFinishAirport(lineShowVO.getFinishAirport());
-        List<FlightDTO> listFlightDTO = new ArrayList<FlightDTO>();
-        List<FlightVO> flightVOList = lineShowVO.getFlightVOList();
-        for (FlightVO flightVO : flightVOList
-                ) {
-            FlightDTO flightDTO = BaseMapper.flightVO2DTO(flightVO);
-            listFlightDTO.add(flightDTO);
-        }
-        lineShowDTO.setFlightDTOList(listFlightDTO);
+//        List<FlightDTO> listFlightDTO = new ArrayList<FlightDTO>();
+//        List<FlightVO> flightVOList = lineShowVO.getFlightVOList();
+//        for (FlightVO flightVO : flightVOList
+//                ) {
+//            FlightDTO flightDTO = BaseMapper.flightVO2DTO(flightVO);
+//            listFlightDTO.add(flightDTO);
+//        }
+        lineShowDTO.setFlightDTO(BaseMapper.flightVO2DTO(lineShowVO.getFlightVO()));
         lineShowDTO.setFinishTime(lineShowVO.getFinishTime());
         lineShowDTO.setGate(lineShowVO.getGate());
         lineShowDTO.setMiddleAirport(lineShowVO.getMiddleAirport());
@@ -230,14 +235,14 @@ public class GoodsMapper {
         lineShowVO.setStartCity(lineShowDO.getStartCity());
         lineShowVO.setFinishCity(lineShowDO.getFinishCity());
         lineShowVO.setFinishAirport(lineShowDO.getFinishAirport());
-        List<FlightVO> flightVOList = new ArrayList<FlightVO>();
-        List<FlightDO> flightDOList = lineShowDO.getFlightDOList();
-        for (FlightDO flightDO : flightDOList
-                ) {
-            FlightVO flightVO = BaseMapper.flightDO2flightVO(flightDO);
-            flightVOList.add(flightVO);
-        }
-        lineShowVO.setFlightVOList(flightVOList);
+//        List<FlightVO> flightVOList = new ArrayList<FlightVO>();
+//        List<FlightDO> flightDOList = lineShowDO.getFlightDOList();
+//        for (FlightDO flightDO : flightDOList
+//                ) {
+//            FlightVO flightVO = BaseMapper.flightDO2flightVO(flightDO);
+//            flightVOList.add(flightVO);
+//        }
+        lineShowVO.setFlightVO(BaseMapper.flightDO2flightVO(lineShowDO.getFlightDO()));
         lineShowVO.setFinishTime(lineShowDO.getFinishTime());
         lineShowVO.setGate(lineShowDO.getGate());
         lineShowVO.setMiddleAirport(lineShowDO.getMiddleAirport());
@@ -274,14 +279,14 @@ public class GoodsMapper {
         lineShowDO.setStartCity(lineShowVO.getStartCity());
         lineShowDO.setFinishCity(lineShowVO.getFinishCity());
         lineShowDO.setFinishAirport(lineShowVO.getFinishAirport());
-        List<FlightDO> flightDOList = new ArrayList<FlightDO>();
-        List<FlightVO> flightVOList = lineShowVO.getFlightVOList();
-        for (FlightVO flightVO : flightVOList
-                ) {
-            FlightDO flightDO = BaseMapper.flightVO2flightDO(flightVO);
-            flightDOList.add(flightDO);
-        }
-        lineShowDO.setFlightDOList(flightDOList);
+//        List<FlightDO> flightDOList = new ArrayList<FlightDO>();
+//        List<FlightVO> flightVOList = lineShowVO.getFlightVOList();
+//        for (FlightVO flightVO : flightVOList
+//                ) {
+//            FlightDO flightDO = BaseMapper.flightVO2flightDO(flightVO);
+//            flightDOList.add(flightDO);
+//        }
+        lineShowDO.setFlightDO(BaseMapper.flightVO2flightDO(lineShowVO.getFlightVO()));
         lineShowDO.setFinishTime(lineShowVO.getFinishTime());
         lineShowDO.setGate(lineShowVO.getGate());
         lineShowDO.setMiddleAirport(lineShowVO.getMiddleAirport());

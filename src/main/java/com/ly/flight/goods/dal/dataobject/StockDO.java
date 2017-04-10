@@ -69,7 +69,7 @@ public class StockDO {
     private int mealExist;
 
     public String getStockID() {
-        return stockID;
+        return this.stockID;
     }
 
     public void setStockID(String stockID) {

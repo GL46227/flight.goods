@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
         <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.ly.flight.goods.mapper.LineMapper" >
+<mapper namespace="com.ly.flight.goods.dal.daointerface.LineMapper" >
 
-  <resultMap id="lineShow" type="LineShowDO" >
+  <resultMap id="LineShowDO" type="LineShowDO" >
     <result column="LINE_ID" property="lineID" javaType="java.lang.String" jdbcType="VARCHAR" />
     <result column="START_CITY" property="startCity" javaType="java.lang.String" jdbcType="VARCHAR" />
     <result column="FINISH_CITY" property="finishCity" javaType="java.lang.String" jdbcType="VARCHAR" />
     <result column="START_DATE" property="startDate" javaType="java.util.Date" jdbcType="DATE"/>
-    <result column="GMT_START" property="startTime" javaType="java.util.Date" jdbcType="DATETIME" />
-    <result column="GMT_FINISH" property="finishTime" javaType="java.util.Date" jdbcType="DATETIME" />
+    <result column="GMT_START" property="startTime" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+    <result column="GMT_FINISH" property="finishTime" javaType="java.util.Date" jdbcType="TIMESTAMP" />
     <result column="START_AIRPORT" property="startAirport" javaType="java.lang.String" jdbcType="VARCHAR" />
     <result column="FINISH_AIRPORT" property="finishAirport" javaType="java.lang.String" jdbcType="VARCHAR" />
     <result column="MIDDLE_AIRPORT" property="middleAirport" javaType="java.lang.String" jdbcType="VARCHAR" />
@@ -22,15 +22,31 @@
       <id column="FLIGHT_NAME" property="flightName" javaType="java.lang.String" jdbcType="VARCHAR"/>
       <id column="PLANE_TYPE" property="planeType" javaType="java.lang.String" jdbcType="VARCHAR"/>
     </collection>
+    <collection property="StockDO" ofType="StockDO">
+      <id column="stock_id" property="stockID" javaType="java.lang.String" jdbcType="VARCHAR"/>
+      <id column="flight_id" property="flightID" javaType="java.lang.String" jdbcType="VARCHAR"/>
+      <id column="line_id" property="lineID" javaType="java.lang.String" jdbcType="VARCHAR"/>
+      <id column="berth_type" property="berthType" javaType="java.lang.String" jdbcType="VARCHAR"/>
+      <id column="berth_name" property="berthName" javaType="java.lang.String" jdbcType="VARCHAR"/>
+      <id column="berth_number" property="berthNumber" javaType="java.lang.String" jdbcType="VARCHAR"/>
+      <id column="sum_berth" property="berthSum" javaType="int" jdbcType="INTEGER"/>
+      <id column="last_berth" property="berthLast" javaType="int" jdbcType="INTEGER"/>
+      <id column="max_sale" property="maxSale" javaType="int" jdbcType="INTEGER"/>
+      <id column="is_sale" property="isSale" javaType="int" jdbcType="INTEGER"/>
+      <id column="berth_price" property="berthPrice" javaType="BigDecimal" jdbcType="DECIMAL"/>
+      <id column="discount" property="discount" javaType="BigDecimal" jdbcType="DECIMAL"/>
+      <id column="rebate" property="rebate" javaType="BigDecimal" jdbcType="DECIMAL"/>
+      <id column="meal_exist" property="mealExist" javaType="int" jdbcType="INTEGER"/>
+    </collection>
   </resultMap>
 
-<resultMap id="line" type="LineDO" >
+<resultMap id="LineDO" type="LineDO" >
   <result column="LINE_ID" property="lineID" javaType="java.lang.String" jdbcType="VARCHAR" />
   <result column="START_CITY" property="startCity" javaType="java.lang.String" jdbcType="VARCHAR" />
   <result column="FINISH_CITY" property="finishCity" javaType="java.lang.String" jdbcType="VARCHAR" />
   <result column="START_DATE" property="startDate" javaType="java.util.Date" jdbcType="DATE"/>
-  <result column="GMT_START" property="startTime" javaType="java.util.Date" jdbcType="DATETIME" />
-  <result column="GMT_FINISH" property="finishTime" javaType="java.util.Date" jdbcType="DATETIME" />
+  <result column="GMT_START" property="startTime" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+  <result column="GMT_FINISH" property="finishTime" javaType="java.util.Date" jdbcType="TIMESTAMP" />
   <result column="START_AIRPORT" property="startAirport" javaType="java.lang.String" jdbcType="VARCHAR" />
   <result column="FINISH_AIRPORT" property="finishAirport" javaType="java.lang.String" jdbcType="VARCHAR" />
   <result column="MIDDLE_AIRPORT" property="middleAirport" javaType="java.lang.String" jdbcType="VARCHAR" />
@@ -43,7 +59,7 @@
 
 
   <!---   插入一条航程的信息    -->
-  <insert id="insertLine" parameterType="line">
+  <insert id="insertLine" parameterType="LineDO">
   INSERT INTO flight_line (LINE_ID,START_CITY,FINISH_CITY,START_DATE,GMT_START,GMT_FINISH,START_AIRPORT,FINISH_AIRPORT,MIDDLE_AIRPORT,MIDDLE_CITY,MIDDLE_TIME,FLIGHT_ID,GATE,TAX_MONEY)
   VALUES (#{lineID},#{startCity},#{finishCity},#{startDate},#{startTime},#{finishTime},#{startAirport},#{finishAirport},#{middleAirport},#{middleCity},#{middleTime},#{flightID},#{gate},#{taxMoney})
 </insert>
@@ -54,52 +70,54 @@
   </delete>
 
   <!---    根据航程ID更新航程信息   -->
-  <update id="updateLine" parameterType="line">
+  <update id="updateLine" parameterType="LineDO">
     UPDATE flight_line
     <set>
-      <if test="START_CITY"> START_CITY=#{startCity}, </if>
-      <if test="FINISH_CITY"> FINISH_CITY=#{finishCity}, </if>
-      <if test="START_DATE"> START_DATE=#{startDate}, </if>
-      <if test="GMT_START"> GMT_START=#{startTime}, </if>
-      <if test="GMT_FINISH"> GMT_FINISH=#{finishTime}, </if>
-      <if test="START_AIRPORT"> START_AIRPORT=#{startAirport}, </if>
-      <if test="FINISH_AIRPORT"> FINISH_AIRPORT=#{finishAirport}, </if>
-      <if test="MIDDLE_AIRPORT"> MIDDLE_AIRPORT=#{middleAirport}, </if>
-      <if test="MIDDLE_CITY"> MIDDLE_CITY=#{middleCity}, </if>
-      <if test="MIDDLE_TIME"> MIDDLE_TIME=#{middleTime}, </if>
-      <if test="FLIGHT_ID"> FLIGHT_ID=#{flightID}, </if>
-      <if test="GATE"> GATE=#{gate}, </if>
-      <if test="TAX_MONEY"> TAX_MONEY=#{taxMoney}, </if>
+      <if test="startCity"> START_CITY=#{startCity}, </if>
+      <if test="finishCity"> FINISH_CITY=#{finishCity}, </if>
+      <if test="startDate"> START_DATE=#{startDate}, </if>
+      <if test="startTime"> GMT_START=#{startTime}, </if>
+      <if test="finishTime"> GMT_FINISH=#{finishTime}, </if>
+      <if test="startAirport"> START_AIRPORT=#{startAirport}, </if>
+      <if test="finishAirport"> FINISH_AIRPORT=#{finishAirport}, </if>
+      <if test="middleAirport"> MIDDLE_AIRPORT=#{middleAirport}, </if>
+      <if test="middleCity"> MIDDLE_CITY=#{middleCity}, </if>
+      <if test="middleTime"> MIDDLE_TIME=#{middleTime}, </if>
+      <if test="flightID"> FLIGHT_ID=#{flightID}, </if>
+      <if test="gate"> GATE=#{gate}, </if>
+      <if test="taxMoney"> TAX_MONEY=#{taxMoney}, </if>
     </set>
     WHERE LINE_ID=#{lineID}
   </update>
 
 
   <!---   查询所有航程信息 -->
-  <select id="selectAllLines" resultMap="line">
+  <select id="selectAllLines" resultMap="LineDO">
     SELECT * FROM flight_line
   </select>
 
   <!---    根据航程ID查询航程信息     -->
-  <select id="selectLine" resultMap="line" parameterType="java.lang.String">
+  <select id="selectLine" resultMap="LineDO" parameterType="java.lang.String">
     SELECT * FROM flight_line WHERE LINE_ID=#{lineID}
   </select>
 
 
   <!--- 根据航司ID查询航程的信息   -->
-  <select id="selectLinesByFlightID" parameterType="java.lang.String" resultMap="line">
+  <select id="selectLinesByFlightID" parameterType="java.lang.String" resultMap="LineDO">
     SELECT * FROM flight_line WHERE FLIGHT_ID=#{flightID}
   </select>
 
 
 
   <!---    用户根据DTO查询   -->
-  <select id="selectLinesByUser" parameterType="UserLineDO" resultMap="lineShow">
+  <select id="selectLinesByUser" parameterType="UserLineDO" resultMap="LineShowDO">
     SELECT LINE_ID,START_CITY,FINISH_CITY,GMT_STARTTIME,GMT_FINISHTIME,START_AIRPORT,
     FINISH_AIRPORT,MIDDLE_AIRPORT,FLY_TYPE,AIR_PORT,TOURISTCLASS_MONEY,FIRSTCLASS_MONEY,
     MEAL_EXIST,TAX_MONEY,TREBATE_MONEY,FREBATE_MONEY,flight_flight.FLIGHT_ID,flight_flight.FLIGHT_NAME,
-    flight_flight.PLANE_TYPE,flight_flight.SUM_FIRSTCLASS,flight_flight.SUM_TOURISTCLASS FROM flightsellssystemline JOIN flightsellssystemflight ON
-    flight_line.FLIGHT_ID=flight_flight.FLIGHT_ID WHERE START_CITY=#{startCity} AND
+    flight_flight.PLANE_TYPE,flight_flight.SUM_FIRSTCLASS,flight_flight.SUM_TOURISTCLASS,flight_stock.berth_type,
+     flight_stock.berth_name,flight_stock.berth_number,flight_stock.last_berth,flight_stock.berth_price,flight_stock.discount,
+     flight_stock.rebate,flight_stock.meal_exist FROM flightsellssystemline LEFT JOIN flightsellssystemflight ON
+    flight_line.FLIGHT_ID=flight_flight.FLIGHT_ID LEFT JOIN flight_stock ON flight_line.LINE_ID=flight_stock.line_id WHERE START_CITY=#{startCity} AND
     FINISH_CITY=#{finishCity} AND GMT_STARTTIME=#{startTime};
   </select>
 

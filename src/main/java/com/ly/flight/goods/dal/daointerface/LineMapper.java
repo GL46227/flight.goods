@@ -64,4 +64,11 @@ public interface LineMapper {
      * @return
      */
     List<LineShowDO> selectLinesByUser(UserLineDO userLineDO);
+
+    /**
+     * 用户查询
+     * @param userLineDTO
+     * @return
+     */
+    List<LineDO> selectLinesByUserDTO(UserLineDO userLineDTO);
 }

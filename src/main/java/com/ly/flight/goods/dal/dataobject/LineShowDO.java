@@ -71,7 +71,7 @@ public class LineShowDO {
     /**
      * 航司
      */
-    private List<FlightDO> flightDOList;
+    private FlightDO flightDO;
 
 
     /**
@@ -176,12 +176,12 @@ public class LineShowDO {
         this.middleTime = middleTime;
     }
 
-    public List<FlightDO> getFlightDOList() {
-        return flightDOList;
+    public FlightDO getFlightDO() {
+        return flightDO;
     }
 
-    public void setFlightDOList(List<FlightDO> flightDOList) {
-        this.flightDOList = flightDOList;
+    public void setFlightDO(FlightDO flightDO) {
+        this.flightDO = flightDO;
     }
 
     public String getGate() {

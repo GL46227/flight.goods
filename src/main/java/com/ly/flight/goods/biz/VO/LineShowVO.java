@@ -71,7 +71,7 @@ public class LineShowVO {
     /**
      * 航司
      */
-    private List<FlightVO> flightVOList;
+    private FlightVO flightVO;
 
 
     /**
@@ -176,12 +176,12 @@ public class LineShowVO {
         this.middleTime = middleTime;
     }
 
-    public List<FlightVO> getFlightVOList() {
-        return flightVOList;
+    public FlightVO getFlightVO() {
+        return flightVO;
     }
 
-    public void setFlightVOList(List<FlightVO> flightVOList) {
-        this.flightVOList = flightVOList;
+    public void setFlightVO(FlightVO flightVO) {
+        this.flightVO = flightVO;
     }
 
     public String getGate() {
