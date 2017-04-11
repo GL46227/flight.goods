@@ -22,7 +22,7 @@
       <id column="FLIGHT_NAME" property="flightName" javaType="java.lang.String" jdbcType="VARCHAR"/>
       <id column="PLANE_TYPE" property="planeType" javaType="java.lang.String" jdbcType="VARCHAR"/>
     </collection>
-    <collection property="StockDO" ofType="StockDO">
+    <collection property="StockDO" ofType="StockDO" javaType="ArrayList">
       <id column="stock_id" property="stockID" javaType="java.lang.String" jdbcType="VARCHAR"/>
       <id column="flight_id" property="flightID" javaType="java.lang.String" jdbcType="VARCHAR"/>
       <id column="line_id" property="lineID" javaType="java.lang.String" jdbcType="VARCHAR"/>
@@ -109,17 +109,20 @@
 
 
 
-  <!---    用户根据DTO查询   -->
-  <select id="selectLinesByUser" parameterType="UserLineDO" resultMap="LineShowDO">
-    SELECT LINE_ID,START_CITY,FINISH_CITY,GMT_STARTTIME,GMT_FINISHTIME,START_AIRPORT,
-    FINISH_AIRPORT,MIDDLE_AIRPORT,FLY_TYPE,AIR_PORT,TOURISTCLASS_MONEY,FIRSTCLASS_MONEY,
-    MEAL_EXIST,TAX_MONEY,TREBATE_MONEY,FREBATE_MONEY,flight_flight.FLIGHT_ID,flight_flight.FLIGHT_NAME,
-    flight_flight.PLANE_TYPE,flight_flight.SUM_FIRSTCLASS,flight_flight.SUM_TOURISTCLASS,flight_stock.berth_type,
-     flight_stock.berth_name,flight_stock.berth_number,flight_stock.last_berth,flight_stock.berth_price,flight_stock.discount,
-     flight_stock.rebate,flight_stock.meal_exist FROM flightsellssystemline LEFT JOIN flightsellssystemflight ON
-    flight_line.FLIGHT_ID=flight_flight.FLIGHT_ID LEFT JOIN flight_stock ON flight_line.LINE_ID=flight_stock.line_id WHERE START_CITY=#{startCity} AND
-    FINISH_CITY=#{finishCity} AND GMT_STARTTIME=#{startTime};
-  </select>
+  <!--<select id="selectLinesByUser" parameterType="UserLineDO" resultMap="LineShowDO">-->
+   <!--SELECT flight_line.LINE_ID,flight_line.START_CITY,flight_line.FINISH_CITY,flight_line.START_DATE,-->
+<!--flight_line.GMT_START,flight_line.GMT_FINISH,flight_line.START_AIRPORT,flight_line.FINISH_AIRPORT,-->
+<!--flight_line.MIDDLE_AIRPORT,flight_line.MIDDLE_CITY,flight_line.MIDDLE_TIME,flight_flight.flight_name,-->
+<!--flight_flight.plane_type,flight_stock.stock_id,flight_stock.berth_type,flight_stock.berth_name,flight_stock.berth_number,flight_stock.sum_berth,-->
+<!--flight_stock.last_berth,flight_stock.max_sale,flight_stock.is_sale,flight_stock.berth_price,flight_stock.discount,flight_stock.rebate,-->
+<!--flight_stock.meal_exist FROM flight_line LEFT JOIN flight_flight ON flight_flight.flight_id=flight_line.FLIGHT_ID LEFT JOIN flight_stock ON flight_line.LINE_ID=flight_stock.line_id WHERE flight_line.START_CITY=#{startCity} AND-->
+<!--FINISH_CITY=#{finishCity} AND START_DATE=#{startDate}-->
+  <!--</select>-->
+
+<select id="selectLinesByUserDTO" parameterType="UserLineDO" resultMap="LineDO">
+  SELECT * FROM flight_line WHERE flight_line.START_CITY=#{startCity} AND FINISH_CITY=#{finishCity} AND START_DATE=#{startDate}
+</select>
+
 
 
 </mapper>

@@ -3,6 +3,7 @@
  * Copyright (c) 2004-2017 All Rights Reserved.
  */
 
+import com.alibaba.dubbo.common.json.JSONArray;
 import com.ly.flight.core.goods.GoodsException;
 import com.ly.flight.goods.biz.VO.LineShowVO;
 import com.ly.flight.goods.biz.mapper.GoodsMapper;
@@ -50,14 +51,14 @@ public class gl {
         public  void test() throws GoodsException, ParseException {
 
 //
-//            String str = "2017-04-10";
-//            SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-//            Date date=format.parse(str);
-//            UserLineDO userLineDO=new UserLineDO();
-//            userLineDO.setStartCity("北京");
-//            userLineDO.setFinishCity("南京");
-//            userLineDO.setStartDate(date);
-//           List<LineShowVO> list= lineService.getLinesByUser(GoodsMapper.userLineDO2UserLineDTO(userLineDO));
+            String str = "2017-04-010T16:00:00.000Z";
+            SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+            Date date=format.parse(str);
+            UserLineDO userLineDO=new UserLineDO();
+            userLineDO.setStartCity("北京");
+            userLineDO.setFinishCity("南京");
+            userLineDO.setStartDate(date);
+            List<LineShowVO> list= lineService.getLinesByUser(GoodsMapper.userLineDO2UserLineDTO(userLineDO));
 //            LineVO lineVO=  lineService.getLineByUserDTO();
 //            System.out.println(lineVO.getLineID());
 //            lineService.updateLine();
@@ -73,24 +74,24 @@ public class gl {
 
         // int i=flightMapper.deleteFlight("f1");
 
-            LineDO lineDO=new LineDO();
-            lineDO.setFinishCity("南京");
-            String str = "2017-04-10";
-            SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-            Date date=format.parse(str);
-            lineDO.setStartTime(date);
-            lineDO.setFlightID("f1");
-            lineDO.setStartAirport("sdf");
-            lineDO.setTaxMoney(new BigDecimal(55));
-            lineDO.setFinishTime(date);
-            lineDO.setFinishAirport("ef");
-            lineDO.setGate("45");
-            lineDO.setLineID("l9");
-            lineDO.setStartAirport("wef");
-            lineDO.setStartCity("fsd");
-            lineDO.setStartDate(date);
-           int i =lineService.addLine(GoodsMapper.lineDO2lineVO(lineDO));
-            System.out.println(i);
+//            LineDO lineDO=new LineDO();
+//            lineDO.setFinishCity("南京");
+//            String str = "2017-04-10";
+//            SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+//            Date date=format.parse(str);
+//            lineDO.setStartTime(date);
+//            lineDO.setFlightID("f1");
+//            lineDO.setStartAirport("sdf");
+//            lineDO.setTaxMoney(new BigDecimal(55));
+//            lineDO.setFinishTime(date);
+//            lineDO.setFinishAirport("ef");
+//            lineDO.setGate("45");
+//            lineDO.setLineID("l9");
+//            lineDO.setStartAirport("wef");
+//            lineDO.setStartCity("fsd");
+//            lineDO.setStartDate(date);
+//           int i =lineService.addLine(GoodsMapper.lineDO2lineVO(lineDO));
+//            System.out.println(i);
 
 //            lineMapper.deleteLine("l1");
 
