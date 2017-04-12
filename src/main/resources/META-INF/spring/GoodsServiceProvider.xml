@@ -6,7 +6,9 @@
 
     <dubbo:application name="goodsServiceProvider"  />
     <!--使用zookeeper注册中心暴露服务地址 -->
+    <!--<dubbo:registry address="zookeeper://10.1.28.14:2181" check="false" timeout="5000"/>-->
     <dubbo:registry address="zookeeper://127.0.0.1:2181" check="false" timeout="5000"/>
+    <!--<dubbo:registry address="zookeeper://112.81.12.93:2181" check="false" timeout="5000"/>-->
     <!-- 扫描注解包路径，多个包用逗号分隔，不填pacakge表示扫描当前ApplicationContext中所有的类 -->
     <dubbo:annotation package="com.ly.flight.goods.facadeImpl" />
     <!--<bean id="userService" class="com.ly.flight.member.serviceImpl.UserServiceImpl"/>

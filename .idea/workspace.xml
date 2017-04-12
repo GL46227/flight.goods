@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e749f507-5c6f-4255-ae5d-798c9b521a5d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ly/flight/goods/biz/service/LineService.class" afterPath="$PROJECT_DIR$/target/classes/com/ly/flight/goods/biz/service/LineService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ly/flight/goods/dal/dataobject/LineShowDO.class" afterPath="$PROJECT_DIR$/target/classes/com/ly/flight/goods/dal/dataobject/LineShowDO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/goods/WEB-INF/classes/com/ly/flight/goods/biz/VO/LineShowVO.class" afterPath="$PROJECT_DIR$/target/goods/WEB-INF/classes/com/ly/flight/goods/biz/VO/LineShowVO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/goods/WEB-INF/classes/com/ly/flight/goods/biz/mapper/GoodsMapper.class" afterPath="$PROJECT_DIR$/target/goods/WEB-INF/classes/com/ly/flight/goods/biz/mapper/GoodsMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/goods/WEB-INF/classes/com/ly/flight/goods/biz/service/LineService.class" afterPath="$PROJECT_DIR$/target/goods/WEB-INF/classes/com/ly/flight/goods/biz/service/LineService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/goods/WEB-INF/classes/com/ly/flight/goods/biz/serviceImpl/LineServiceImpl.class" afterPath="$PROJECT_DIR$/target/goods/WEB-INF/classes/com/ly/flight/goods/biz/serviceImpl/LineServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/goods/WEB-INF/classes/com/ly/flight/goods/dal/dataobject/LineShowDO.class" afterPath="$PROJECT_DIR$/target/goods/WEB-INF/classes/com/ly/flight/goods/dal/dataobject/LineShowDO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/goods/WEB-INF/lib/flight_core-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/goods/WEB-INF/lib/flight_core-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/facadeImpl/LineFacadeImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/facadeImpl/LineFacadeImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/gl.java" afterPath="$PROJECT_DIR$/src/main/test/gl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/goods/WEB-INF/classes/META-INF/mapper/LineMapper.xml" afterPath="$PROJECT_DIR$/target/goods/WEB-INF/classes/META-INF/mapper/LineMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/serviceImpl/LineServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/serviceImpl/LineServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/spring/GoodsServiceProvider.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/spring/GoodsServiceProvider.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/META-INF/spring/GoodsServiceProvider.xml" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring/GoodsServiceProvider.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/goods/WEB-INF/classes/META-INF/spring/GoodsServiceProvider.xml" afterPath="$PROJECT_DIR$/target/goods/WEB-INF/classes/META-INF/spring/GoodsServiceProvider.xml" />
     </list>
     <ignored path="flightgoods.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,20 +37,74 @@
       <file leaf-file-name="gl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/test/gl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
+            <state relative-caret-position="315">
               <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#!!doc" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LineFacadeImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LineFacadeImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ly/flight/goods/facadeImpl/LineFacadeImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="801">
+            <state relative-caret-position="2100">
               <caret line="122" column="63" selection-start-line="122" selection-start-column="63" selection-end-line="122" selection-end-column="63" />
+              <folding>
+                <element signature="n#!!doc" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#3294#3303#0" expanded="false" />
+                <element signature="e#4804#4813#0" expanded="false" />
+                <element signature="e#5649#5662#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoodsServiceProvider.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/GoodsServiceProvider.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StockMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/mapper/StockMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="64" column="33" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="33" />
+              <folding>
+                <marker date="1491795687684" expanded="true" signature="1681:2028" placeholder="INSERT INTO flight_stock... " />
+                <marker date="1491795687684" expanded="true" signature="2127:2177" placeholder="DELETE FROM " />
+                <marker date="1491795687684" expanded="true" signature="2268:3070" placeholder="UPDATE fligh... " />
+                <marker date="1491795687684" expanded="true" signature="3160:3186" placeholder="SELECT * FRO... flight_stock" />
+                <marker date="1491795687684" expanded="true" signature="3310:3362" placeholder="SELECT * FRO... flight_stock" />
+                <marker date="1491795687684" expanded="true" signature="3494:3544" placeholder="SELECT * FRO... flight_stock" />
+                <marker date="1491795687684" expanded="true" signature="3676:3730" placeholder="SELECT * FRO... flight_stock" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StockMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ly/flight/goods/dal/daointerface/StockMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-189">
+              <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StockServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/serviceImpl/StockServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -83,27 +130,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LineMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ly/flight/goods/dal/daointerface/LineMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1365">
-              <caret line="72" column="37" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="37" />
-              <folding>
-                <element signature="n#!!doc" expanded="false" />
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LineServiceImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LineServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/serviceImpl/LineServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="801">
-              <caret line="98" column="42" selection-start-line="98" selection-start-column="28" selection-end-line="98" selection-end-column="42" />
+            <state relative-caret-position="1701">
+              <caret line="113" column="64" selection-start-line="113" selection-start-column="64" selection-end-line="113" selection-end-column="64" />
               <folding>
-                <element signature="e#5022#5034#0" expanded="true" />
-                <marker date="1491832746489" expanded="false" signature="3142:3154" placeholder="&lt;~&gt;" />
+                <element signature="e#5018#5030#0" expanded="true" />
+                <marker date="1491962226034" expanded="false" signature="3142:3154" placeholder="&lt;~&gt;" />
               </folding>
             </state>
           </provider>
@@ -112,51 +146,12 @@
       <file leaf-file-name="FlightServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/serviceImpl/FlightServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-165">
-              <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoodsMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/mapper/GoodsMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2520">
-              <caret line="137" column="51" selection-start-line="124" selection-start-column="8" selection-end-line="137" selection-end-column="51" />
-              <folding>
-                <element signature="n#!!doc" expanded="false" />
-                <element signature="e#7418#7428#0" expanded="false" />
-                <element signature="e#9952#9961#0" expanded="false" />
-                <element signature="e#11905#11914#0" expanded="false" />
-                <marker date="1491826477234" expanded="false" signature="6439:6450" placeholder="&lt;~&gt;" />
-                <marker date="1491826477234" expanded="false" signature="8980:8990" placeholder="&lt;~&gt;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FlightFacadeImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ly/flight/goods/facadeImpl/FlightFacadeImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+              <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
               <folding>
                 <element signature="n#!!doc" expanded="false" />
                 <element signature="imports" expanded="false" />
-                <element signature="e#3202#3213#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StockFacadeImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ly/flight/goods/facadeImpl/StockFacadeImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1365">
-              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1642#1652#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -212,7 +207,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/dal/dalinterface/LineMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/dal/dalinterface/StockMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/service/StockService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring/GoodsServiceProvider.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/service/FlightService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/enums/CommonStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/mapper/FlightMapper.java" />
@@ -237,9 +231,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/mapper/GoodsMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/service/LineService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/mapper/LineMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/serviceImpl/LineServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/test/gl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/facadeImpl/LineFacadeImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring/GoodsServiceProvider.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/serviceImpl/LineServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -293,8 +288,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -826,6 +819,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1471,9 +1466,9 @@
       </method>
     </configuration>
     <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.gl.test" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.gl" />
-      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.tomcat8" />
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.tomcat8" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.gl.test" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.gl" />
     </list>
     <recent_temporary>
       <list size="2">
@@ -1510,7 +1505,8 @@
       <workItem from="1491785964309" duration="12249000" />
       <workItem from="1491803526018" duration="20993000" />
       <workItem from="1491833203124" duration="68000" />
-      <workItem from="1491873731992" duration="11467000" />
+      <workItem from="1491873731992" duration="15170000" />
+      <workItem from="1491958808428" duration="1833000" />
     </task>
     <task id="LOCAL-00001" summary="goods">
       <created>1491545564680</created>
@@ -1554,7 +1550,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491833095119</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="goods">
+      <created>1491925242142</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1491925242142</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1590,7 +1593,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151023000" />
+    <option name="totallyTimeSpent" value="156559000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1598,15 +1601,15 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53846157" sideWeight="0.28997868" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53846157" sideWeight="0.2867804" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5406912" sideWeight="0.49413645" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37569678" sideWeight="0.50053304" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5406912" sideWeight="0.50586355" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37569678" sideWeight="0.49946696" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12040134" sideWeight="0.49358973" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1847,14 +1850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/GoodsServiceProvider.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -1874,27 +1869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="178" column="35" selection-start-line="178" selection-start-column="35" selection-end-line="178" selection-end-column="35" />
-          <folding>
-            <element signature="e#3355#3356#0" expanded="true" />
-            <element signature="e#3405#3406#0" expanded="true" />
-            <element signature="e#3445#3446#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/mapper/StockMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-56">
-          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-          <folding>
-            <marker date="1491795687684" expanded="true" signature="1681:2028" placeholder="INSERT INTO flight_stock... " />
-            <marker date="1491795687684" expanded="true" signature="2127:2177" placeholder="DELETE FROM " />
-            <marker date="1491795687684" expanded="true" signature="2268:3070" placeholder="UPDATE fligh... " />
-            <marker date="1491795687684" expanded="true" signature="3160:3186" placeholder="SELECT * FRO... flight_stock" />
-            <marker date="1491795687684" expanded="true" signature="3310:3362" placeholder="SELECT * FRO... flight_stock" />
-            <marker date="1491795687684" expanded="true" signature="3494:3544" placeholder="SELECT * FRO... flight_stock" />
-            <marker date="1491795687684" expanded="true" signature="3676:3730" placeholder="SELECT * FRO... flight_stock" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1938,9 +1912,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="449">
           <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1948,23 +1919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="449">
           <caret line="47" column="12" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ly/flight/goods/dal/daointerface/StockMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/serviceImpl/StockServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1972,63 +1926,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2499">
           <caret line="174" column="28" selection-start-line="174" selection-start-column="28" selection-end-line="174" selection-end-column="28" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#1077#1078#0" expanded="false" />
-            <element signature="e#1107#1108#0" expanded="false" />
-            <element signature="e#1153#1154#0" expanded="false" />
-            <element signature="e#1191#1192#0" expanded="false" />
-            <element signature="e#1226#1227#0" expanded="false" />
-            <element signature="e#1257#1258#0" expanded="false" />
-            <element signature="e#1305#1306#0" expanded="false" />
-            <element signature="e#1345#1346#0" expanded="false" />
-            <element signature="e#1378#1379#0" expanded="false" />
-            <element signature="e#1407#1408#0" expanded="false" />
-            <element signature="e#1451#1452#0" expanded="false" />
-            <element signature="e#1487#1488#0" expanded="false" />
-            <element signature="e#1523#1524#0" expanded="false" />
-            <element signature="e#1555#1556#0" expanded="false" />
-            <element signature="e#1605#1606#0" expanded="false" />
-            <element signature="e#1647#1648#0" expanded="false" />
-            <element signature="e#1683#1684#0" expanded="false" />
-            <element signature="e#1715#1716#0" expanded="false" />
-            <element signature="e#1765#1766#0" expanded="false" />
-            <element signature="e#1807#1808#0" expanded="false" />
-            <element signature="e#1845#1846#0" expanded="false" />
-            <element signature="e#1879#1880#0" expanded="false" />
-            <element signature="e#1933#1934#0" expanded="false" />
-            <element signature="e#1979#1980#0" expanded="false" />
-            <element signature="e#2011#2012#0" expanded="false" />
-            <element signature="e#2042#2043#0" expanded="false" />
-            <element signature="e#2087#2088#0" expanded="false" />
-            <element signature="e#2127#2128#0" expanded="false" />
-            <element signature="e#2160#2161#0" expanded="false" />
-            <element signature="e#2192#2193#0" expanded="false" />
-            <element signature="e#2239#2240#0" expanded="false" />
-            <element signature="e#2281#2282#0" expanded="false" />
-            <element signature="e#2312#2313#0" expanded="false" />
-            <element signature="e#2342#2343#0" expanded="false" />
-            <element signature="e#2385#2386#0" expanded="false" />
-            <element signature="e#2423#2424#0" expanded="false" />
-            <element signature="e#2464#2465#0" expanded="false" />
-            <element signature="e#2497#2498#0" expanded="false" />
-            <element signature="e#2553#2554#0" expanded="false" />
-            <element signature="e#2597#2598#0" expanded="false" />
-            <element signature="e#2636#2637#0" expanded="false" />
-            <element signature="e#2667#2668#0" expanded="false" />
-            <element signature="e#2719#2720#0" expanded="false" />
-            <element signature="e#2759#2760#0" expanded="false" />
-            <element signature="e#2796#2797#0" expanded="false" />
-            <element signature="e#2825#2826#0" expanded="false" />
-            <element signature="e#2873#2874#0" expanded="false" />
-            <element signature="e#2909#2910#0" expanded="false" />
-            <element signature="e#2942#2943#0" expanded="false" />
-            <element signature="e#2974#2975#0" expanded="false" />
-            <element signature="e#3021#3022#0" expanded="false" />
-            <element signature="e#3063#3064#0" expanded="false" />
-            <element signature="e#3163#3164#0" expanded="false" />
-            <element signature="e#3199#3200#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2036,66 +1933,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1449">
           <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#1425#1426#0" expanded="false" />
-            <element signature="e#1454#1455#0" expanded="false" />
-            <element signature="e#1498#1499#0" expanded="false" />
-            <element signature="e#1534#1535#0" expanded="false" />
-            <element signature="e#1570#1571#0" expanded="false" />
-            <element signature="e#1602#1603#0" expanded="false" />
-            <element signature="e#1652#1653#0" expanded="false" />
-            <element signature="e#1694#1695#0" expanded="false" />
-            <element signature="e#1731#1732#0" expanded="false" />
-            <element signature="e#1764#1765#0" expanded="false" />
-            <element signature="e#1816#1817#0" expanded="false" />
-            <element signature="e#1860#1861#0" expanded="false" />
-            <element signature="e#1894#1895#0" expanded="false" />
-            <element signature="e#1926#1927#0" expanded="false" />
-            <element signature="e#1974#1975#0" expanded="false" />
-            <element signature="e#2016#2017#0" expanded="false" />
-            <element signature="e#2051#2052#0" expanded="false" />
-            <element signature="e#2084#2085#0" expanded="false" />
-            <element signature="e#2134#2135#0" expanded="false" />
-            <element signature="e#2178#2179#0" expanded="false" />
-            <element signature="e#2217#2218#0" expanded="false" />
-            <element signature="e#2252#2253#0" expanded="false" />
-            <element signature="e#2308#2309#0" expanded="false" />
-            <element signature="e#2356#2357#0" expanded="false" />
-            <element signature="e#2396#2397#0" expanded="false" />
-            <element signature="e#2432#2433#0" expanded="false" />
-            <element signature="e#2490#2491#0" expanded="false" />
-            <element signature="e#2540#2541#0" expanded="false" />
-            <element signature="e#2580#2581#0" expanded="false" />
-            <element signature="e#2616#2617#0" expanded="false" />
-            <element signature="e#2650#2651#0" expanded="false" />
-            <element signature="e#2682#2683#0" expanded="false" />
-            <element signature="e#2730#2731#0" expanded="false" />
-            <element signature="e#2772#2773#0" expanded="false" />
-            <element signature="e#2830#2831#0" expanded="false" />
-            <element signature="e#2880#2881#0" expanded="false" />
-            <element signature="e#2917#2918#0" expanded="false" />
-            <element signature="e#2950#2951#0" expanded="false" />
-            <element signature="e#3002#3003#0" expanded="false" />
-            <element signature="e#3046#3047#0" expanded="false" />
-            <element signature="e#3083#3084#0" expanded="false" />
-            <element signature="e#3116#3117#0" expanded="false" />
-            <element signature="e#3168#3169#0" expanded="false" />
-            <element signature="e#3212#3213#0" expanded="false" />
-            <element signature="e#3247#3248#0" expanded="false" />
-            <element signature="e#3278#3279#0" expanded="false" />
-            <element signature="e#3326#3327#0" expanded="false" />
-            <element signature="e#3366#3367#0" expanded="false" />
-            <element signature="e#3397#3398#0" expanded="false" />
-            <element signature="e#3424#3425#0" expanded="false" />
-            <element signature="e#3464#3465#0" expanded="false" />
-            <element signature="e#3496#3497#0" expanded="false" />
-            <element signature="e#3535#3536#0" expanded="false" />
-            <element signature="e#3566#3567#0" expanded="false" />
-            <element signature="e#3618#3619#0" expanded="false" />
-            <element signature="e#3658#3659#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2150,10 +1987,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ly/flight/goods/facadeImpl/StockFacadeImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1365">
+        <state relative-caret-position="210">
           <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#3083#3093#0" expanded="false" />
+            <element signature="e#4336#4346#0" expanded="false" />
+            <element signature="e#5100#5110#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2176,38 +2016,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/test/gl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
+        <state relative-caret-position="315">
           <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/serviceImpl/FlightServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
+        <state relative-caret-position="210">
           <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/serviceImpl/LineServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="801">
-          <caret line="98" column="42" selection-start-line="98" selection-start-column="28" selection-end-line="98" selection-end-column="42" />
           <folding>
-            <element signature="e#5022#5034#0" expanded="true" />
-            <marker date="1491832746489" expanded="false" signature="3142:3154" placeholder="&lt;~&gt;" />
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1642#1652#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ly/flight/goods/facadeImpl/LineFacadeImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="801">
+        <state relative-caret-position="2100">
           <caret line="122" column="63" selection-start-line="122" selection-start-column="63" selection-end-line="122" selection-end-column="63" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3294#3303#0" expanded="false" />
+            <element signature="e#4804#4813#0" expanded="false" />
+            <element signature="e#5649#5662#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/GoodsServiceProvider.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/mapper/StockMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="64" column="33" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="33" />
+          <folding>
+            <marker date="1491795687684" expanded="true" signature="1681:2028" placeholder="INSERT INTO flight_stock... " />
+            <marker date="1491795687684" expanded="true" signature="2127:2177" placeholder="DELETE FROM " />
+            <marker date="1491795687684" expanded="true" signature="2268:3070" placeholder="UPDATE fligh... " />
+            <marker date="1491795687684" expanded="true" signature="3160:3186" placeholder="SELECT * FRO... flight_stock" />
+            <marker date="1491795687684" expanded="true" signature="3310:3362" placeholder="SELECT * FRO... flight_stock" />
+            <marker date="1491795687684" expanded="true" signature="3494:3544" placeholder="SELECT * FRO... flight_stock" />
+            <marker date="1491795687684" expanded="true" signature="3676:3730" placeholder="SELECT * FRO... flight_stock" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ly/flight/goods/dal/daointerface/StockMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-189">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/serviceImpl/StockServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ly/flight/goods/biz/serviceImpl/LineServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1701">
+          <caret line="113" column="64" selection-start-line="113" selection-start-column="64" selection-end-line="113" selection-end-column="64" />
+          <folding>
+            <element signature="e#5018#5030#0" expanded="true" />
+            <marker date="1491962226034" expanded="false" signature="3142:3154" placeholder="&lt;~&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>

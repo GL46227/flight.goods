@@ -117,7 +117,7 @@ public class LineServiceImpl implements LineService {
             lineShowDO.setTaxMoney(lineDO.getTaxMoney());
             lineShowDO.setStartAirport(lineDO.getStartAirport());
             lineShowDO.setStartTime(lineDO.getStartTime());
-            List<StockDO> stockDOlist=stockMapper.selectStockByFlightID(lineDO.getFlightID());
+            List<StockDO> stockDOlist=stockMapper.selectStockByLineID(lineDO.getLineID());
             lineShowDO.setStockDOList(stockDOlist);
             lineShowDOlist.add(lineShowDO);
         }
